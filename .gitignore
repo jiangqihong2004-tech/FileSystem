@@ -1,0 +1,37 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+
+# ===== Node =====
+node_modules/
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== 项目运行时数据（敏感 / 大文件，禁止上传） =====
+# 用户上传的文件 + 前端构建产物
+backend/static/
+# 知识库文档（个人文件）+ AI 对话记录（含真实姓名）
+backend/file_mgr/
+# 本地临时测试目录
+backend/tmp_test/
+
+# ===== 本地临时文件 =====
+run_test.bat
+test_output.txt
+*.log

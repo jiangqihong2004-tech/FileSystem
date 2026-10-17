@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f4ff"/>
+      <stop offset="100%" stop-color="#c7e0fb"/>
+    </linearGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8f4ff"/>
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8bc9ff"/>
+      <stop offset="100%" stop-color="#1e6bb8"/>
+    </radialGradient>
+    <linearGradient id="cheekGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc9d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffb0c0" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <!-- 背景 -->
+  <rect width="120" height="120" rx="60" fill="url(#bgGrad)"/>
+  <!-- 头顶闪电 -->
+  <path d="M 56 14 L 64 14 L 60 26 L 66 26 L 54 46 L 58 34 L 52 34 Z" fill="#1e90ff" stroke="#1565c0" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- WiFi 信号 -->
+  <path d="M 82 20 Q 92 18 96 28" fill="none" stroke="#1e90ff" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M 86 25 Q 90 26 92 30" fill="none" stroke="#1e90ff" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 89 30 L 91 32" fill="none" stroke="#1e90ff" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 耳机/头部主体 -->
+  <circle cx="60" cy="62" r="44" fill="url(#headGrad)" stroke="#1e90ff" stroke-width="3"/>
+  <!-- 内圈 -->
+  <circle cx="60" cy="62" r="36" fill="#ffffff" stroke="#4a90e2" stroke-width="2"/>
+  <!-- 耳机左耳 -->
+  <path d="M 18 50 Q 14 62 18 76 L 24 74 Q 22 62 24 52 Z" fill="#4a90e2" stroke="#1565c0" stroke-width="1.5"/>
+  <circle cx="22" cy="63" r="4" fill="#ffffff" opacity="0.6"/>
+  <!-- 耳机右耳 -->
+  <path d="M 102 50 Q 106 62 102 76 L 96 74 Q 98 62 96 52 Z" fill="#4a90e2" stroke="#1565c0" stroke-width="1.5"/>
+  <circle cx="98" cy="63" r="4" fill="#ffffff" opacity="0.6"/>
+  <!-- 小圆点装饰（右侧） -->
+  <circle cx="84" cy="44" r="5" fill="#ffffff" stroke="#4a90e2" stroke-width="2"/>
+  <circle cx="84" cy="44" r="2.5" fill="#4a90e2"/>
+  <!-- 眼睛左眼 -->
+  <circle cx="44" cy="62" r="11" fill="url(#eyeGrad)" stroke="#1565c0" stroke-width="1.5"/>
+  <circle cx="41" cy="58" r="3.5" fill="#ffffff" opacity="0.95"/>
+  <circle cx="46" cy="65" r="1.8" fill="#ffffff" opacity="0.6"/>
+  <!-- 眼睛右眼 -->
+  <circle cx="76" cy="62" r="11" fill="url(#eyeGrad)" stroke="#1565c0" stroke-width="1.5"/>
+  <circle cx="73" cy="58" r="3.5" fill="#ffffff" opacity="0.95"/>
+  <circle cx="78" cy="65" r="1.8" fill="#ffffff" opacity="0.6"/>
+  <!-- 腮红左 -->
+  <ellipse cx="36" cy="80" rx="5.5" ry="3.5" fill="url(#cheekGrad)" opacity="0.7"/>
+  <!-- 腮红右 -->
+  <ellipse cx="84" cy="80" rx="5.5" ry="3.5" fill="url(#cheekGrad)" opacity="0.7"/>
+  <!-- 微笑嘴巴 -->
+  <path d="M 52 82 Q 60 90 68 82" fill="none" stroke="#1565c0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 底座 -->
+  <ellipse cx="60" cy="115" rx="30" ry="6" fill="#4a90e2" opacity="0.2"/>
+  <path d="M 45 108 L 75 108 L 72 116 L 48 116 Z" fill="#4a90e2" stroke="#1565c0" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="55" y="110" width="10" height="5" rx="1.5" fill="#8bc9ff"/>
+</svg>

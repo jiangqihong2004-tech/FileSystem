@@ -1,0 +1,15 @@
+import request from './index'
+
+export const getFileList = (params) => request.get('/file/list', { params })
+export const uploadFile = (folderId, formData) => request.post(`/file/upload/${folderId}`, formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+export const downloadFile = (fileId) => request.get(`/file/download/${fileId}`, { responseType: 'blob' })
+export const previewFile = (fileId) => request.get(`/file/preview/${fileId}`, { responseType: 'blob' })
+export const renameFile = (fileId, data) => request.put(`/file/rename/${fileId}`, data)
+export const moveFile = (fileId, data) => request.put(`/file/move/${fileId}`, data)
+export const deleteFile = (fileId) => request.put(`/file/del/${fileId}`)
+export const permanentDeleteFile = (fileId) => request.delete(`/file/${fileId}`)
+export const getRecycleList = () => request.get('/file/recycle')
+export const restoreFile = (fileId) => request.put(`/file/restore/${fileId}`)
+export const clearRecycle = () => request.delete('/file/recycle/clear')
+export const batchDeleteFiles = (data) => request.put('/file/batch/del', data)
+export const batchMoveFiles = (data) => request.put('/file/batch/move', data)

@@ -1,0 +1,16 @@
+/* ============ 全局样式 ============ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; font-family: 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif; background: #f0f6ff; }
+
+/* 防止 Vue 初始化前的闪烁 */
+[v-cloak] { display: none !important; }
+
+/* 滚动条美化 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #c5d9ec; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #2196f3; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Element Plus 主题色覆盖 */
+.el-button--primary { --el-button-bg-color: #2196f3; --el-button-border-color: #2196f3; --el-button-hover-bg-color: #1976d2; --el-button-hover-border-color: #1976d2; }
+.el-pagination.is-background .el-pager li.is-active { background-color: #2196f3 !important; }
